@@ -1,0 +1,10 @@
+local url = "https://r4.wallpaperflare.com/wallpaper/531/341/205/fate-grand-order-femboy-sailor-uniform-red-skirt-cat-boy-hd-wallpaper-e930488da14a5d0b36a778df60b196ad.jpg"
+
+writefile("myimg.png", game:HttpGet(url))
+
+local gui = Instance.new("ScreenGui", game.CoreGui)
+
+local img = Instance.new("ImageLabel", gui)
+img.Size = UDim2.fromOffset(1920,1080)
+img.BackgroundTransparency = 1
+img.Image = getcustomasset("myimg.png")
